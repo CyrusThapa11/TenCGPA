@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+.home {
+  background: #7f7fd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-register {
+  background-image: url("./pages/bg_reg.svg");
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-allnote {
+  background-image: linear-gradient(
+    to right top,
+    #1d976c,
+    #32aa82,
+    #46bd99,
+    #59d0b0,
+    #6ce3c8,
+    #5de6db,
+    #54e7ee,
+    #56e8ff,
+    #6ad3ff,
+    #a2b9ff,
+    #d09de2,
+    #e684ae
+  );
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.profile {
+  background-image: linear-gradient(
+    to right bottom,
+    #c4e0e5,
+    #b0d8e4,
+    #9ecee5,
+    #90c4e7,
+    #87b9e8,
+    #7fbbed,
+    #75bdf3,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.create-note {
+  background-image: linear-gradient(
+    to right top,
+    #a1ffce,
+    #b7ffc9,
+    #caffc7,
+    #dbffc7,
+    #eaffca,
+    #e1fece,
+    #d9fdd2,
+    #d2fbd6,
+    #b5f6e0,
+    #9feeed,
+    #94e5f8,
+    #99d9fe
+  );
 }
