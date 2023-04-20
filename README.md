@@ -1,70 +1,93 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Ten CGPA
 
-## Available Scripts
+An academic portal for scholars who wish to get high grades in their course of academic session which will help them for their future studies .
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Authentication
+- Create , Read , Update , Delete of Notes and Testpapers
+- Customize Notes with editor 
+- Like, Save , Comment ( for discussion ) , share with specific people of notes and testpapers
+- Sorting and filtering on the basis of likes , comments , username, College 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Screenshots 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Landing page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![App Screenshot](https://res.cloudinary.com/vinsmokecyrus/image/upload/v1681975966/Projects/L1_pinvn1.png) 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![App Screenshot](https://res.cloudinary.com/vinsmokecyrus/image/upload/v1681976071/Projects/L2_yxxlar.png) 
 
-### `npm run eject`
+![App Screenshot](https://res.cloudinary.com/vinsmokecyrus/image/upload/v1681975978/Projects/L3_azvo6c.png) 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Authentication page
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![App Screenshot](https://res.cloudinary.com/vinsmokecyrus/image/upload/v1681975969/Projects/Au1_e7ldnk.png) 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![App Screenshot](https://res.cloudinary.com/vinsmokecyrus/image/upload/v1681976021/Projects/L4_wgif36.png) 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### All-Notes page
 
-## Learn More
+![App Screenshot](https://res.cloudinary.com/vinsmokecyrus/image/upload/v1681975956/Projects/allNotes_ce9chl.png) 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![App Screenshot](https://res.cloudinary.com/vinsmokecyrus/image/upload/v1681976002/Projects/L5_ktn7ua.png) 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Create-Notes page
 
-### Code Splitting
+![App Screenshot](https://res.cloudinary.com/vinsmokecyrus/image/upload/v1681976031/Projects/N1_j3onsi.png) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![App Screenshot](https://res.cloudinary.com/vinsmokecyrus/image/upload/v1681975941/Projects/N2_g4slbn.png) 
 
-### Analyzing the Bundle Size
+### Profile page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![App Screenshot](https://res.cloudinary.com/vinsmokecyrus/image/upload/v1681975892/Projects/L7_scbzvo.png) 
 
-### Making a Progressive Web App
+### View Notes 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![App Screenshot](https://res.cloudinary.com/vinsmokecyrus/image/upload/v1681976024/Projects/notesExample1_djr5c2.png)
 
-### Advanced Configuration
+## API Reference
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### Get all Notes
 
-### Deployment
+```http
+  GET /api/notes
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+#### Get a note
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```http
+  GET /api/notes/${id}
+```
+
+#### Create a note
+
+```http
+  POST /api/notes/
+```
+#### Delete a note
+
+```http
+  GET /api/notes/${id}/${userID}
+```
+#### Like a note
+
+```http
+  POST /api/notes/like/${id}
+```
+
+#### Save a note
+
+```http
+  POST /api/notes/save/${id}
+```
+#### Comment a note
+
+```http
+  POST /api/notes/comment/${id}/
